@@ -1,0 +1,2 @@
+33site:
+nextflow run nf-core/sarek -r 3.3.2 -profile test,singularity --outdir result -resume
