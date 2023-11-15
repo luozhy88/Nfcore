@@ -4,3 +4,7 @@ https://github.com/nf-core/raredisease
 
 nextflow run nf-core/raredisease -r 1.1.1 -profile test,docker  --outdir results
 nextflow run nf-core/raredisease -r 1.1.1 -profile test,singularity  --outdir results
+nextflow run nf-core/raredisease -r 1.1.1 -profile test,singularity -resume  --outdir results  
+
+
+33site,img:/data/zhiyu/software/nfcore/singularity
