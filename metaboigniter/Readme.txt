@@ -7,3 +7,4 @@ PrecursorMZ（前体m/z）指的是前体离子的质荷比（mass-to-charge rat
 
 https://www.shiyanjia.com/knowledge/articleinfo-1496.html
 https://systemsomicslab.github.io/compms/msdial/main.html#MSP
+https://hmdb.ca/downloads
