@@ -8,3 +8,8 @@ PrecursorMZ（前体m/z）指的是前体离子的质荷比（mass-to-charge rat
 https://www.shiyanjia.com/knowledge/articleinfo-1496.html
 https://systemsomicslab.github.io/compms/msdial/main.html#MSP
 https://hmdb.ca/downloads
+https://github.com/ZhuMSLab/MetDNA/tree/master
+https://sciex.com/content/dam/SCIEX/pdf/brochures/identification-of-compounds-by-accurate-mass-spectrometry.pdf
+https://www.omicsolution.com/index.php/News/detail/id/158.html
+https://stack.xieguigang.me/2022/look-inside-metadna-annotation-algorithm/
+https://www.cnblogs.com/miyuanbiotech/p/12732609.html
