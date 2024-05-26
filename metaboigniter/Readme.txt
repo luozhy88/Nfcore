@@ -13,3 +13,13 @@ https://sciex.com/content/dam/SCIEX/pdf/brochures/identification-of-compounds-by
 https://www.omicsolution.com/index.php/News/detail/id/158.html
 https://stack.xieguigang.me/2022/look-inside-metadna-annotation-algorithm/
 https://www.cnblogs.com/miyuanbiotech/p/12732609.html
+
+
+
+
+docker run -v /data/data1/zhiyu/data/software/nfcore/metaboigniter/ms2query:/home/test quay.io/biocontainers/ms2query:1.2.3--pyhdfd78af_0 ms2query --spectra /home/test/dummy_spectra.mgf  --library /home/test/Download/neg/downloads --ionmode positive
+
+
+docker run -v /data/data1/zhiyu/data/software/nfcore/metaboigniter/ms2query:/home/test quay.io/biocontainers/ms2query:1.2.3--pyhdfd78af_0 ms2query --spectra /home/test/dummy_spectra.mgf  --library /home/test/Download/pos --ionmode positive
+
+
