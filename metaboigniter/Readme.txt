@@ -27,6 +27,6 @@ https://github.com/LiChenPU/NetID  #https://www.nature.com/articles/s41592-021-0
 https://jaspershen.github.io/metID
 https://www.bioconductor.org/packages/release/bioc/html/MetaboAnnotation.html
 
-Ms2query #https://www.nature.com/articles/s41467-023-37446-4
+Ms2query #https://github.com/iomega/ms2query/tree/0c9ce6757880436b4833abdc7325ce478669e578 https://www.nature.com/articles/s41467-023-37446-4
 
 
