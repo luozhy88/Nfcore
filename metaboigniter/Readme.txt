@@ -23,3 +23,10 @@ docker run -v /data/data1/zhiyu/data/software/nfcore/metaboigniter/ms2query:/hom
 docker run -v /data/data1/zhiyu/data/software/nfcore/metaboigniter/ms2query:/home/test quay.io/biocontainers/ms2query:1.2.3--pyhdfd78af_0 ms2query --spectra /home/test/dummy_spectra.mgf  --library /home/test/Download/pos --ionmode positive
 
 
+https://github.com/LiChenPU/NetID  #https://www.nature.com/articles/s41592-021-01303-3
+https://jaspershen.github.io/metID
+https://www.bioconductor.org/packages/release/bioc/html/MetaboAnnotation.html
+
+Ms2query #https://www.nature.com/articles/s41467-023-37446-4
+
+
