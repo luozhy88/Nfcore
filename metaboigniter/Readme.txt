@@ -30,5 +30,8 @@ Ms2query #https://github.com/iomega/ms2query/tree/0c9ce6757880436b4833abdc7325ce
 
 # Database
 https://github.com/MassBank/MassBank-data/tree/main
+https://chemdata.nist.gov/dokuwiki/doku.php?id=peptidew:lib:human20140529
+https://hmdb.ca/downloads
+
 
 
