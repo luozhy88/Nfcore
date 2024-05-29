@@ -33,5 +33,22 @@ https://github.com/MassBank/MassBank-data/tree/main
 https://chemdata.nist.gov/dokuwiki/doku.php?id=peptidew:lib:human20140529
 https://hmdb.ca/downloads
 
+# ms2query1.2.4
+conda activate ms2query1.2.4
+mamba  install python=3.8.15
+conda install -y  bioconda::ms2deepscore=0.4
+mamba  install -y --channel bioconda --channel conda-forge spec2vec=0.8.0
+mamba install  -y h5py=3.9.0  pyarrow=12.0.1 skl2onnx=1.15.0 onnxruntime=1.15.1 pytest=7.4.0  zip 
+mamba install -y pandas=1.5.3  matplotlib=3.7.2  #自动安装numpy=1.24.4 pandas=2.0.3  
+mamba install -y scikit-learn=1.3.0
+
+pip install ms2query==1.2.4  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+################################################################
+wget -c https://pypi.tuna.tsinghua.edu.cn/packages/f4/e6/307c4f83b54e15d4a3531b263fb48dd69cb886deb5801ca0152680493b0e/tensorflow-2.8.4-cp38-cp38-manylinux2010_x86_64.whl#sha256=b43137a87b59d83abaf6e2e8dcdad0e2640c728c24d995565042316ccbf56440
+pip install ./tensorflow-2.8.4-cp38-cp38-manylinux2010_x86_64.whl #本地安装
+
+pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl
+pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple libclang #指定镜像源安装包
 
 
+mamba install -c  bioconda tensorflow-base=2.8.1=cpu_py38hc7a75a0_0
