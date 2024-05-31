@@ -52,3 +52,40 @@ pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple libclang #指�
 
 
 mamba install -c  bioconda tensorflow-base=2.8.1=cpu_py38hc7a75a0_0
+
+
+
+#代谢通路相关数据库
+BiocManager::install("ReactomePA")
+BiocManager::install("reactome.db")
+https://mona.fiehnlab.ucdavis.edu/downloads
+devtools::install_github("ncats/RaMP-DB")
+sudo yum install mariadb-connector-c-devel | mariadb-devel | mysql-devel
+BiocManager::install("BiocFileCache")
+
+
+# 创建安装路径(如果不存在)
+dir.create("/data/data1/zhiyu/R/4x/library", recursive = TRUE)
+install.packages("/data/data1/zhiyu/R/4x/reactome.db_1.88.0.tar.gz",   repos = NULL,    lib = "/data/data1/zhiyu/R/4x/library")
+.libPaths(c("/data/data1/zhiyu/R/4x/library", .libPaths()))
+https://rampdb.nih.gov/analytes-from-pathways
+library(RaMP)
+rampDB <- RaMP()
+
+
+# metid
+
+remotes::install_gitlab("tidymass/metid")
+remotes::install_gitlab("tidymass/massdatabase", dependencies = TRUE)
+remotes::install_gitlab("jaspershen/massdataset")
+install.packages("BiocManager")
+BiocManager::install("MSnbase")
+BiocManager::install("ComplexHeatmap")
+BiocManager::install("mzR", suppressUpdates = TRUE)
+BiocManager::install("Rdisop")
+remotes::install_gitlab("jaspershen/masstools")
+BiocManager::install("SummarizedExperiment")
+
+
+?annotate_metabolites_mass_dataset 
+
