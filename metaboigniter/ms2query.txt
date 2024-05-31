@@ -1,0 +1,27 @@
+## ms2query 中化合物名称搜索方法
+import logging
+import re
+import pubchempy as pcp
+import numpy as np
+from matchms.metadata_utils import is_valid_inchikey
+logger = logging.getLogger("matchms")
+
+def pubchem_name_search(compound_name: str, name_search_depth=10, verbose=1):
+    """Search pubmed for compound name"""
+    results_pubchem = pcp.get_compounds(compound_name,
+                                        'name',
+                                        listkey_count=name_search_depth)
+    if len(results_pubchem) == 0 and "_" in compound_name:
+        results_pubchem = pcp.get_compounds(compound_name.replace("_", " "),
+                                            'name',
+                                            listkey_count=name_search_depth)
+    if len(results_pubchem) == 0:
+        return []
+    
+    logger.debug("Found at least %s compounds of that name on pubchem.", len(results_pubchem))
+    return results_pubchem
+
+
+pubchem_name_search("SLI", name_search_depth=10, verbose=2) 
+pubchem_name_search("Cholesterol", name_search_depth=10, verbose=2) 
+
