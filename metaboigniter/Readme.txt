@@ -94,3 +94,10 @@ BiocManager::install("SummarizedExperiment")
 https://mona.fiehnlab.ucdavis.edu/downloads
 
 近日,来自荷兰 Wageningen University & Research的Niek F. de Jonge的研究团队在nature communications上发表了一篇名为“MS2Query: reliable and scalable MS2 mass spectra-based analogue search"的文章。这篇文章的主要内容是介绍了一种新的代谢组学分析工具MS2Query,它可以通过质谱峰图的相似性搜索来寻找代谢物结构的类似物。文章指出,传统的代谢组学分析方法通常需要对大量样本进行分析,并且需要使用复杂的数据处理和统计方法来鉴定代谢物。而MS2Query则可以通过快速、准确地搜索质谱峰图相似性来简化这个过程。该研究使用了四个不同的数据集(来自内部标准数据库和在线数据库LIPID MAPS48、 HMDB49和GNPS20)进行验证,证明了该工具能够可靠地预测出35%的光谱类似物,并且平均Tanimoto分数为0.63 (化学相似性) 。因此,作者认为MS2Query是一种可靠且可扩展的质谱数据搜索工具,可以帮助研究人员更好地理解代谢组学数据并鉴定未知代谢产物。
+
+
+
+为了成功进行模拟搜索，即使两个分子不相同，也必须有一个光谱相似性分数，该分数可以很好地代表化学相似性。
+无监督的 Spec2Vec 和有监督的 MS2Deepscore
+
+首先使用matchms 33 清理数据集。清理元数据以获得统一的格式，并删除或更正错位的元数据。将数据集分为正模式光谱和负模式光谱。对质量裂解峰的强度进行归一化。除去高于1000 Da的峰，并除去强度小于最高峰的0.1%的峰。对于具有超过500个峰的光谱，去除具有最低强度的峰。从库中完全去除具有少于3个峰的光谱。GNPS库中的某些光谱没有存储InChIKey。使用来自matchms extras的方法通过在PubChem上搜索化合物名称和分子式来添加缺失的InChIKeys。将库光谱分为注释和未注释的光谱。如果光谱具有有效的SMILES、InChiKey和Inchi，则认为光谱已完全注释。 未注释的光谱用作Spec2Vec的额外训练光谱，因为Spec2Vec是无监督的。未注释的光谱不用于训练MS2Deepscore、MS2Query或用于测试光谱。
