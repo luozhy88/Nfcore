@@ -44,6 +44,11 @@ mamba install -y scikit-learn=1.3.0
 
 pip install ms2query==1.2.4  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ################################################################
+方法3：
+pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple python==3.8.15
+pip install ms2query==1.2.4  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install rdkit==2023.03.3  --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+################################################################
 wget -c https://pypi.tuna.tsinghua.edu.cn/packages/f4/e6/307c4f83b54e15d4a3531b263fb48dd69cb886deb5801ca0152680493b0e/tensorflow-2.8.4-cp38-cp38-manylinux2010_x86_64.whl#sha256=b43137a87b59d83abaf6e2e8dcdad0e2640c728c24d995565042316ccbf56440
 pip install ./tensorflow-2.8.4-cp38-cp38-manylinux2010_x86_64.whl #本地安装
 
