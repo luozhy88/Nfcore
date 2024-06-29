@@ -1,0 +1,13 @@
+
+
+
+npc_results = get_json_npc_results(smiles)#可以将其注销掉，提高效率。 来自于add_classifire_classifications.py
+
+def get_json_cf_results(full_inchikey: str) -> Optional[List[str]]:#来自于add_classifire_classifications.py
+    """
+    Extract the wanted CF classes.
+    Names of the keys extracted in order are:
+    'kingdom', 'superclass', 'class', 'subclass', 'direct_parent'
+    """
+    classes = ['kingdom', 'superclass', 'class','subclass', 'direct_parent']
+    return classes
